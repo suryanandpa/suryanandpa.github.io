@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuryaNand PA | Builder & Systems Thinker</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Dark Mode Color Palette */
+        :root {
+            --bg-color: #0d1117;
+            --text-main: #c9d1d9;
+            --text-muted: #8b949e;
+            --accent-color: #58a6ff;
+            --accent-hover: #1f6feb;
+            --card-bg: #161b22;
+            --border-color: #30363d;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1, h2, h3 { color: #ffffff; }
+        
+        /* Terminal Font for Headers */
+        .mono { font-family: 'Fira Code', monospace; }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Hero Section */
+        header {
+            padding: 4rem 0 2rem 0;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 3rem;
+        }
+
+        .hero-title {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            color: var(--accent-color);
+        }
+
+        .hero-subtitle {
+            font-size: 1.25rem;
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+        }
+
+        /* Interactive Terminal Mockup */
+        .terminal-box {
+            background: #000;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1rem;
+            font-family: 'Fira Code', monospace;
+            font-size: 0.9rem;
+            color: #2ea043;
+            margin-bottom: 2rem;
+        }
+
+        .terminal-box span { color: var(--accent-color); }
+
+        /* Grid Layout for Sections */
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .grid-2 { grid-template-columns: 1fr; }
+        }
+
+        /* Cards */
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            transition: transform 0.2s ease;
+        }
+
+        .card:hover { transform: translateY(-5px); border-color: var(--accent-color); }
+
+        .card h3 { margin-top: 0; margin-bottom: 0.5rem; font-size: 1.2rem; }
+        
+        /* Tech Tags */
+        .tag-container { margin-top: 1rem; }
+        .tag {
+            background: rgba(88, 166, 255, 0.1);
+            color: var(--accent-color);
+            padding: 0.25rem 0.75rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-family: 'Fira Code', monospace;
+            display: inline-block;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+            border: 1px solid rgba(88, 166, 255, 0.2);
+        }
+
+        section { margin-bottom: 4rem; }
+        
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid var(--accent-color);
+            padding-left: 10px;
+        }
+
+        a { color: var(--accent-color); text-decoration: none; }
+        a:hover { text-decoration: underline; color: var(--accent-hover); }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1 class="hero-title mono">SuryaNand PA</h1>
+            <p class="hero-subtitle">Systems-first thinker. Tech builder-in-progress. Community leader.</p>
+            
+            <div class="terminal-box">
+                > surya.getLocation() <br>
+                <span>"India"</span> <br>
+                > surya.getAge() <br>
+                <span>16</span> <br>
+                > surya.getCurrentFocus() <br>
+                <span>"Building AI projects that solve real problems (education tech, misinformation, civic tech)."</span> <br>
+                <span class="cursor">_</span>
+            </div>
+
+            <p>11th-grade CS student mixing technical logic with social impact. From leading community drives to prototyping machine learning models, I build systems that help people.</p>
+            <p><strong>Contact:</strong> <a href="mailto:suryanandpa@gmail.com">suryanandpa@gmail.com</a></p>
+        </header>
+
+        <section>
+            <h2 class="section-title mono">01. Tech & Projects</h2>
+            <div class="grid-2">
+                <div class="card">
+                    <h3>AI Social Media Fact-Checker</h3>
+                    <p><em>In Progress (Prototype/MVP)</em></p>
+                    <p>Building an AI pipeline to extract short-form video captions, cross-reference reliable sources, and flag questionable content with rationale.</p>
+                    <div class="tag-container">
+                        <span class="tag">Python</span>
+                        <span class="tag">ML Prototyping</span>
+                        <span class="tag">Prompt Engineering</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>IIT Madras Certification</h3>
+                    <p><em>AI & Machine Learning</em></p>
+                    <p>Completed the IIT Madras School Connect program, securing a strong foundational understanding of artificial intelligence frameworks.</p>
+                    <div class="tag-container">
+                        <span class="tag">AI/ML</span>
+                        <span class="tag">Data Evaluation</span>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <h3>Device/Lock System Experiments</h3>
+                    <p><em>Independent Hardware & System Design</em></p>
+                    <p>Exploration of system architectures and security bypasses to understand the fundamental logic of device operations.</p>
+                    <div class="tag-container">
+                        <span class="tag">Linux</span>
+                        <span class="tag">Command Line</span>
+                        <span class="tag">System Design</span>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <h3>Technical Arsenal</h3>
+                    <p>Comfortable utilizing daily-driver developer environments to build web applications and analyze data.</p>
+                    <div class="tag-container">
+                        <span class="tag">Git/GitHub</span>
+                        <span class="tag">Flask/Streamlit</span>
+                        <span class="tag">Pandas</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title mono">02. Leadership & Impact</h2>
+            
+            <div class="card" style="margin-bottom: 1.5rem;">
+                <h3>Lead — National Service Scheme (NSS)</h3>
+                <p><strong>Impact: 120+ Volunteer Hours</strong> | <em>2 Years</em></p>
+                <ul style="padding-left: 20px; color: var(--text-muted);">
+                    <li>Managed unit activities, outreach, and hands-on community projects.</li>
+                    <li>Created and scaled the NSS social media channels, achieving an organic reach of over 13,000+.</li>
+                    <li>Organized literacy drives (teaching reading/writing to rural youth), anti-drug awareness, and community disaster management campaigns.</li>
+                    <li>Spearheaded local infrastructure renovations, including a local house and a kindergarten.</li>
+                </ul>
+            </div>
+
+            <div class="grid-2">
+                <div class="card">
+                    <h3>IT Club President</h3>
+                    <p><em>2 Years (9th & 10th)</em></p>
+                    <p>Organized coding sessions, fostered technical curiosity, and directly mentored junior students in basic programming logic.</p>
+                </div>
+                <div class="card">
+                    <h3>Troop Leader — Bharat Scouts & Guides</h3>
+                    <p><em>5 Years Total (3+ as Leader)</em></p>
+                    <p>Led patrol and troop operations, organizing drills, camps, and developing team-building initiatives.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title mono">03. Academics & Competitions</h2>
+            <div class="grid-2">
+                <div class="card">
+                    <h3>Academics</h3>
+                    <p><strong>10th Grade:</strong> Full A+ (Maximum Grade).</p>
+                    <p><strong>Current:</strong> 11th Grade (Higher Secondary CS Stream), maintaining rigorous focus on top marks for STEM subjects.</p>
+                </div>
+                <div class="card">
+                    <h3>Awards</h3>
+                    <ul style="padding-left: 20px; color: var(--text-muted); margin-bottom: 0;">
+                        <li><strong>IT Quiz:</strong> Subdistrict 2nd Place</li>
+                        <li><strong>IT Presentation:</strong> Subdistrict 3rd Place</li>
+                        <li><strong>English Essay/Story:</strong> School 3rd Place</li>
+                        <li><strong>SOF Olympiad:</strong> Participant</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>Built by SuryaNand PA. When not coding, I'm playing guitar, reading, writing, or shooting photography.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
